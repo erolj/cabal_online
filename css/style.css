@@ -15,7 +15,7 @@
 #estGnb h1 a{display: block; width: 100%; height: 100%}
 #estGnb .menu_gnbL{position: absolute; top: 0; left: 102px}
 #estGnb .menu_gnbL>a{display: block; float: left; margin-top: 8px}
-#estGnb .menu_gnbL .toggle_1{z-index: 5; position: absolute; top: -4px; left: 67px; width: 29px; height: 27px; background: url(../img/btn_layer.gif) -29px 0;}
+#estGnb .menu_gnbL .toggle_1{z-index: 5; position: absolute; top: -4px; left: 70px; width: 29px; height: 27px; background: url(../img/btn_layer.gif) -29px 0;}
 #estGnb .menu_gnbL .toggle_1.on{background-position: 0 0}
 #estGnb .menu_gnbL .list_game{display: none; position: absolute; top: 30px; left: -10px; width: 214px; height: 119px; border: 1px solid #b7b9bf; background: #fff; z-index: 2; text-align: center; font-size: 11px; letter-spacing: -1px}
 #estGnb .menu_gnbL .list_game li:nth-child(-n+2){width: 50%; float: left}
