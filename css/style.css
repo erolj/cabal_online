@@ -1,0 +1,305 @@
+/* Common CSS */
+.blind{display: block; position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; opacity: 0; z-index: -1}
+.bold{font-weight: bold}
+.clearfix:after{clear: both; display: block; content: ''}
+.btn_more{position: absolute; right: 15px; top: 10px; background: url(http://localhost/cabal_online/css/../img/spr_blt.gif) 100% -26px no-repeat; padding-right: 8px;}
+
+#popUp{ width: 100%; text-align: center; background: #fa4d4d; color: #fefefe; font-size: 14px; line-height: 3em; font-size: 18px; letter-spacing: -1px;
+}
+
+/* ESTGames Global Navgation Bar */
+#estGnb {position: relative; width: 100%; height: 30px; background: url(../img/bg_gnb.gif) repeat-x; font-family: "돋움", dotum; }
+#estGnb .inner_gnb{position: relative; width: 1100px; height: 100%; margin: 0 auto; }
+#estGnb h1{display: block; width: 92px; height: 30px; background: url(../img/h1_games.gif) no-repeat}
+
+#estGnb h1 a{display: block; width: 100%; height: 100%}
+#estGnb .menu_gnbL{position: absolute; top: 0; left: 102px}
+#estGnb .menu_gnbL>a{display: block; float: left; margin-top: 8px}
+#estGnb .menu_gnbL .toggle_1{z-index: 5; position: absolute; top: -4px; left: 67px; width: 29px; height: 27px; background: url(../img/btn_layer.gif) -29px 0;}
+#estGnb .menu_gnbL .toggle_1.on{background-position: 0 0}
+#estGnb .menu_gnbL .list_game{display: none; position: absolute; top: 30px; left: -10px; width: 214px; height: 119px; border: 1px solid #b7b9bf; background: #fff; z-index: 2; text-align: center; font-size: 11px; letter-spacing: -1px}
+#estGnb .menu_gnbL .list_game li:nth-child(-n+2){width: 50%; float: left}
+#estGnb .menu_gnbL .list_game li img{padding: 10px 6px 0 6px}
+#estGnb .menu_gnbL .list_game li span{display: block; padding: 5px 0 8px 0}
+#estGnb .menu_gnbL .list_game li:nth-child(3){clear: both; height: 26px; border-top: 1px solid #eaeaea; background-color: #f4f4f4; line-height: 2.5em}
+#estGnb .menu_gnbL .list_game li a{display: block}
+#estGnb .menu_gnbL .list_game li:nth-child(3) a{text-indent: -25px; background: url(../img/btn_gnb_go.gif) 80% center no-repeat}
+
+#estGnb .menu_gnbR{position: absolute; top: 0; right: 0; font-size: 11px; letter-spacing: -1px}
+#estGnb .menu_gnbR>li{margin-top: 9px; float: left}
+#estGnb .menu_gnbR>li:nth-of-type(2){margin-left: 8px; padding-left: 8px; margin-right: 8px; background: url(../img/blt_gnb_bar.gif) left no-repeat;}
+#estGnb .menu_gnbR>li:nth-of-type(3){width: 52px; height: 20px; margin-top: 5px; background: url(../img/btn_gnb_login.gif);}
+#estGnb .menu_gnbR li a{display: block; float: left}
+#estGnb .menu_gnbR>li:nth-of-type(3) a{width: 100%; height: 100%}
+#estGnb .menu_gnbR .toggle_2{display: inline-block; margin-left: 2px; width: 13px; height: 12px; background: url(../img/btn_customer_close.gif);}
+#estGnb .menu_gnbR .list_center{display: none; position: absolute; top: 30px; left: 10px; width: 74px; height: 44px; border: 1px solid #686a74; padding: 5px; background: #fff; z-index: 2}
+#estGnb .menu_gnbR .list_center li{width: 100%; }
+#estGnb .menu_gnbR .list_center li a{display: block; width: 100%; font-size: 12px; line-height: 1.9em; background: url(../img/blt_gnb_arrow.gif) right center no-repeat;}
+
+/*Skip Navigation Bar*/
+#skipNav{position:relative; z-index: 100; width:100%; overflow:hidden}
+#skipNav a{display:block; height:1px; margin-bottom:-1px; 
+overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:14px}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{display:block; height:auto; padding:10px 0; background: #000; color: #fff}
+
+/* Cabal Online Contents Wrap, Inner*/
+#wrap{width: 100%; height: 100%; background: url(../img/bg_170926_main.jpg) 50% 0 no-repeat; min-width: 1100px; overflow: hidden}
+#container{position: relative; width: 1100px; margin: 0 auto;}
+
+/* Cabal Online Header Area */
+#cabalHeader{position: relative; height: 78px; margin-top: 44px}
+#cabalHeader h1{width: 228px; height: 78px; background: url(../img/h1.png) center no-repeat}
+#cabalHeader h1 a{display: block; width: 100%; height: 100%}
+
+/* Cabal Online Global Navigation Bar */
+#cabalGnb{position: absolute; top: 0; right: 0}
+#cabalGnb .menu{margin-top: 18px; transition: 150ms}
+#cabalGnb .menu li{float: left}
+#cabalGnb .menu>li{height: 45px}
+#cabalGnb .menu li h3 a{display: block; height: 28px; padding: 2px 0; background: url(../img/spr_gnb.png) no-repeat; margin-right: 43px}
+#cabalGnb .menu li:nth-of-type(1) h3 a{width: 67px; background-position: 0 -62px}
+#cabalGnb .menu li:nth-of-type(2) h3 a{width: 86px; background-position: -109px -62px}
+#cabalGnb .menu li:nth-of-type(3) h3 a{width: 86px; background-position: -238px -62px}
+#cabalGnb .menu li:nth-of-type(4) h3 a{width: 106px; background-position: -369px -62px}
+#cabalGnb .menu li:nth-of-type(5) h3 a{width: 86px; background-position: -518px -62px}
+#cabalGnb .menu li:nth-of-type(6) h3 a{width: 67px; background-position: -647px -62px}
+#cabalGnb .menu li:nth-of-type(7) h3 a{width: 86px; background-position: -755px -62px; margin-right: 0} 
+
+#cabalGnb .menu:hover{margin-top: 2px}
+#cabalGnb .menu:hover li:nth-of-type(1) h3 a{background-position: 0 0px}
+#cabalGnb .menu:hover li:nth-of-type(2) h3 a{background-position: -109px 0px}
+#cabalGnb .menu:hover li:nth-of-type(3) h3 a{background-position: -238px -0px}
+#cabalGnb .menu:hover li:nth-of-type(4) h3 a{background-position: -369px 0px}
+#cabalGnb .menu:hover li:nth-of-type(5) h3 a{background-position: -518px 0px}
+#cabalGnb .menu:hover li:nth-of-type(6) h3 a{background-position: -647px 0px}
+#cabalGnb .menu:hover li:nth-of-type(7) h3 a{background-position: -755px 0px; margin-right: 0}
+
+#cabalGnb .menu li:nth-of-type(1):hover h3 a{width: 67px; background-position: 0 -62px}
+#cabalGnb .menu li:nth-of-type(2):hover h3 a{width: 86px; background-position: -109px -62px}
+#cabalGnb .menu li:nth-of-type(3):hover h3 a{width: 86px; background-position: -238px -62px}
+#cabalGnb .menu li:nth-of-type(4):hover h3 a{width: 106px; background-position: -369px -62px}
+#cabalGnb .menu li:nth-of-type(5):hover h3 a{width: 86px; background-position: -518px -62px}
+#cabalGnb .menu li:nth-of-type(6):hover h3 a{width: 67px; background-position: -647px -62px}
+#cabalGnb .menu li:nth-of-type(7):hover h3 a{width: 86px; background-position: -755px -62px; margin-right: 0} 
+
+#cabalGnb .menu .menu_sub:before{position: absolute; top: -12px; left: 30px; border: 6px solid transparent; border-bottom-color: rgba(0,0,0,.4); content: ''}
+#cabalGnb .menu .ms2:before{left: 150px}
+#cabalGnb .menu .ms3:before{left: 120px}
+#cabalGnb .menu .ms4:before{left: 120px}
+#cabalGnb .menu .ms5:before{left: 385px}
+#cabalGnb .menu .ms6:before{left: unset; right: 155px}
+#cabalGnb .menu .ms7:before{left: unset; right: 35px}
+#cabalGnb .menu .menu_sub{position: absolute; left: 0; bottom: -20px; display: none; background: rgba(0,0,0,.4); letter-spacing: -1px}
+#cabalGnb .menu .menu_sub{display: none; font-size: 14px; line-height: 2em}
+#cabalGnb .menu .ms3{left: 160px}
+#cabalGnb .menu .ms4{left: 300px}
+#cabalGnb .menu .ms5, #cabalGnb .menu .ms6, #cabalGnb .menu .ms7{left: unset; right: 0}
+#cabalGnb .menu>li:hover .menu_sub{display: block}
+#cabalGnb .menu .menu_sub li a{padding: 0 11px; color: #c0c0c0}
+#cabalGnb .menu .menu_sub li:hover a{color: #ff8004}
+
+.cont_intro {position: relative; left: -28px; width: 1098px; height: 328px; margin-top: 46px; background: url(../img/bg_banner_main.png) 0 0 no-repeat; padding: 33px 28px 34px 28px}
+
+/* Cabal Online Main Slider */
+.cont_intro .wrap_slider{position: relative; float: left}
+.cont_intro .wrap_slider .cont_slider {position: relative; width: 829px; height: 327px; bottom: -2px; }
+.cont_intro .wrap_slider .cont_slider li{position: absolute; bottom: 0; left: 0}
+.cont_intro .wrap_slider .btn_slider {position: absolute; left: 46px; bottom: 31px}
+.cont_intro .wrap_slider .btn_slider li{display: inline-block; width: 16px; height: 16px; margin-right: 2px; background: url(../img/spr_btn_m_b_nav.png) no-repeat}
+.cont_intro .wrap_slider .btn_slider li a{display: block; width: 100%; height: 100%; transition: 300ms}
+.cont_intro .wrap_slider .btn_slider li.on{width: 28px; background-position: -22px 0}
+
+/* Cabal Online Game Start & Account */
+.cont_intro .box_contR{position: relative; right: 0; top: 2px; width: 268px; float: right}
+.cont_intro .sec_start{width: 100%; height: 152px; background: url(../img/bg_download.jpg) center}
+.cont_intro .sec_start .btn_start{display: block; width: 100%; height:116px; background: url(../img/btn_gamestart.png) 50% 53px no-repeat;}
+.cont_intro .sec_start ul{height: 36px; border-top: 1px solid #765111; margin: 0 13px; text-align: center}
+.cont_intro .sec_start ul li{float: left; width: 50%; padding-top: 8px; border-top: 1px solid #F4BD65; letter-spacing: -1px; font-weight: bold; font-size: 13px}
+.cont_intro .sec_start ul li:nth-child(1){background: url(../img/spr_blt_1.gif) right 10px no-repeat}
+
+.cont_intro .sec_account{height: 135px; color: #8f8e8d; font-size: 12px; letter-spacing: -1px; background: #202020; border-left: 1px solid #3A3A3A; border-top: 1px solid #393939; padding: 19px 14px}
+.cont_intro .sec_account .menu_login li{position: relative; display: inline-block}
+.cont_intro .sec_account .menu_login li:nth-child(-n+3){margin-left: 4px; padding-left: 5px}
+.cont_intro .sec_account .menu_login li:nth-child(-n+2):after{position: absolute; top: 6px; right: -6px; width: 1px; height: 8px; display: block; border-right: 1px solid #414141; content: ''}
+.cont_intro .sec_account .menu_login li a{color: #8f8e8d;}
+.cont_intro .sec_account .menu_login li:first-child a{color:#d39553}
+.cont_intro .sec_account input, .cont_intro .sec_account label{background: url(../img/spr_login_main.png) no-repeat}
+.cont_intro .sec_account input{padding-left: 10px; color: #ccc}
+.cont_intro .sec_account input[type="checkbox"]+label{padding-left: 18px; background-position: -89px 3px; line-height: 17px}
+.cont_intro .sec_account .label_secure{margin-right: 12px}
+.cont_intro .sec_account input[type="checkbox"]:checked+label{background-position: -89px -17px}
+.cont_intro .sec_account .box_login{position: relative; margin: 24px 0 18px 0}
+.cont_intro .sec_account .box_login input:nth-of-type(-n+2){ width: 148px; height: 27px; background-position: -119px -99px; border: none}
+.cont_intro .sec_account .box_login .label_id{width: 10px; height: 5px; position: absolute; top: 10px; left: 10px; background-position: -88px -40px}
+.cont_intro .sec_account .box_login input:focus+label {display: none}
+.cont_intro .sec_account .box_login .label_pw{width: 58px; height: 5px; position: absolute; top: 38px; left: 10px; background-position: -88px -53px}
+.cont_intro .sec_account .box_login .btn_login{position: absolute; right: 0; top: 0; width: 83px; height: 57px; text-indent: -9999px; border: none; background-position: 0 0 }
+
+/* Quick Notice & Search */
+.cont_quickNotice{position: relative; padding: 28px 0 27px 45px; background: url(../img/bg_main_notice.jpg) no-repeat; font-size: 16px; }
+.cont_quickNotice a{color: #efefef}
+.cont_quickNotice .sec_quickNotice .wrap_notice_list{position: relative; height: 21px; overflow: hidden}
+.cont_quickNotice .sec_quickNotice .notice_list{position: relative; left: 0; top: 0}
+.cont_quickNotice .sec_quickNotice .notice_list li{text-shadow: 2px 1px #222}
+.cont_quickNotice .sec_quickNotice .notice_list strong{color:#ffc603}
+.cont_quickNotice .sec_quickNotice .notice_list li a:nth-of-type(1):hover{text-decoration: none}
+.cont_quickNotice .sec_srch .label_srch_txt{position: absolute; top: 10px; left: 15px; padding-right: 40px; background: url(../img/spr_blt_1.gif) 100% -103px no-repeat; font-size: 13px; font-weight: bold; letter-spacing: -1px}
+.cont_quickNotice .sec_srch{position: absolute; top: 17px; right: 18px; width: 252px; height: 39px}
+.cont_quickNotice .sec_srch input[type="text"]{float: left; padding: 12px 0px 12px 15px; border: none}
+.cont_quickNotice .sec_srch .btn_srch{float: left; display: inline-block; width: 68px; height: 39px; border: none; background: url(../img/btn_main_search.gif); color: #fff; text-shadow: 0 0 5px #666; letter-spacing: -1px}
+
+/* Contents Main Area */
+#cont_main{width: 1100px; margin-top: 45px}
+#cont_main .box_left {float: left; width: 786px; margin-right: 44px; overflow: hidden; }
+#cont_main .box_left section{position: relative; border: 1px solid #DFDFE1; background: #fbfbfd}
+#cont_main .box_left h3{font-size: 17px}
+
+/* sec_itemShop */
+#cont_main .box_left .sec_itemShop{width: 784px; height: 227px; margin-bottom: 28px;}
+#cont_main .box_left .sec_itemShop h3, #cont_main .box_left .sec_issue h3{padding: 9px 0 9px 17px; border-bottom: 1px solid #DFDFE1}
+#cont_main .box_left .sec_itemShop .wrap_item_slider{position: relative; height: 156px; margin: 18px 50px 0 49px; overflow: hidden}
+#cont_main .box_left .sec_itemShop .wrap_item_slider .cont_item_slider{position: absolute; width: 2896px; height: 156px; clear: both}
+#cont_main .box_left .sec_itemShop .cont_item_slider ul{float: left; width: 1448px; height: 156px}
+#cont_main .box_left .sec_itemShop .cont_item_slider ul li{float: left;  width: 142px; margin-right: 39px}
+#cont_main .box_left .sec_itemShop .cont_item_slider ul li:last-child{padding-right: 181px}
+#cont_main .box_left .sec_itemShop .cont_item_slider ul li a{position: relative; display: block}
+#cont_main .box_left .sec_itemShop .hot, #cont_main .box_left .sec_itemShop .new{display: block; width: 51px; height: 51px; position: absolute; top: -11px; left: 1px}
+#cont_main .box_left .sec_itemShop .hot{background: url(../img/bg_m_i_hot.png) no-repeat;}
+#cont_main .box_left .sec_itemShop .new{background: url(../img/bg_m_i_new.png) no-repeat;}
+#cont_main .box_left .sec_itemShop .cont_item_slider ul li img{border: 1px solid #dfdfe1}
+#cont_main .box_left .sec_itemShop .cont_item_slider ul li span{display: block; margin-top: 12px; text-align: center}
+#cont_main .box_left .sec_itemShop .wrap_item_slider+ul li{position: absolute; top: 110px; background: url(../img/spr_btn_m_i_move.gif) no-repeat; width: 25px; height: 25px}
+#cont_main .box_left .sec_itemShop .wrap_item_slider+ul .btn_item_prev{left: 15px}
+#cont_main .box_left .sec_itemShop .wrap_item_slider+ul .btn_item_next{right: 15px; background-position: -25px 0}
+#cont_main .box_left .sec_itemShop .wrap_item_slider+ul li a{display: block; width: 100%; height: 100%}
+
+#cont_main .box_left .cont_middle{width: 786px; margin-bottom: 28px} 
+#cont_main .box_left .cont_middle .cmn_md_size {position: relative; width: 378px; height: 259px; border: 1px solid #d4d4d6; float: left }
+#cont_main .box_left .cont_middle .cmn_md_size ul .list {line-height: 2.1em; clear: both}
+#cont_main .box_left .cont_middle .cmn_md_size ul .list a{display: block; position: relative; width: 67%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; float: left; padding-right: 10%; padding-left: 3%; color: #5d5d5d; background: url(../img/spr_blt_1.gif) 0 -146px no-repeat;}
+#cont_main .box_left .cont_middle .cmn_md_size ul .list .date{display: block; width: 20%; float: right; text-align: right; color: #959595 }
+
+/* sec_sec_issue */
+#cont_main .box_left .cont_middle .sec_issue { margin-right: 26px}
+#cont_main .box_left .cont_middle .sec_issue ul li:first-child{position: relative}
+#cont_main .box_left .cont_middle .sec_issue ul li:nth-child(n+2){padding: 6px 5%;}
+#cont_main .box_left .cont_middle .sec_issue ul li:first-child p{position: absolute; bottom: 0; width: 90%; color: #f2f2f2;   background: rgba(0,0,0,.7); padding: 0 5%; clear: both}
+#cont_main .box_left .cont_middle .sec_issue ul li:first-child p strong{width: 70%; display: block; font-size: 15px; font-weight: normal; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; float: left; line-height:  2.35em}
+#cont_main .box_left .cont_middle .sec_issue ul li:first-child p span{background: url(../img/bg_main_look.png) center right no-repeat; width: 30%; display: block; color: #c8c8c8; font-size: 12px; line-height: 2em; text-align: right; float: right; line-height: 3em}
+#cont_main .box_left .cont_middle .sec_issue .list{padding: 0 5%}
+
+/* sec_notiece & article & update */
+#cont_main .box_left .cont_middle .box_info {background: #fbfbfd}
+#cont_main .box_left .cont_middle .box_info h3{position: absolute; width: 125px; height: 40px; text-align: center;}
+#cont_main .box_left .cont_middle .box_info h3 a{color: #7D7D7E; display: block; font-size: 15px; line-height: 2.6em;  border-bottom: 1px solid #d4d4d6; text-decoration: none}
+#cont_main .box_left .cont_middle .box_info h3.on a{border-bottom: 1px solid #fbfbfd; color:#333}
+#cont_main .box_left .cont_middle .box_info h3:nth-of-type(2) {left: 125px; border-left: 1px solid #DFDFE1; border-right: 1px solid #d4d4d6}
+#cont_main .box_left .cont_middle .box_info h3:nth-of-type(3){left: 252px; width: 126px;}
+#cont_main .box_left .cont_middle .box_info ul{display: none; position: absolute; top: 40px; width: 336px; height: 174px; padding: 23px 21px 22px 21px}
+#cont_main .box_left .cont_middle .box_info ul.on{display: block}
+
+
+/* sec_review & gallery & video */
+#cont_main .box_left .box_pics {position: relative; width: 786px; height: 210px}
+#cont_main .box_left .box_pics h3{position: absolute; width: 140px; background: #fbfbfd; border-top: 1px solid #DFDFE1; z-index: 5}
+#cont_main .box_left .box_pics h3 a{color: #7D7D7E; display: block; font-size: 15px; line-height: 2.6em;  border-bottom: 1px solid #d4d4d6; text-decoration: none; text-align: center}
+#cont_main .box_left .box_pics h3.on a{border-bottom: 1px solid #fbfbfd; color:#333}
+#cont_main .box_left .box_pics .tab_review{border-left: 1px solid #DFDFE1}
+#cont_main .box_left .box_pics .tab_gallery{left: 141px; border-left: 1px solid #DFDFE1; border-right: 1px solid #d4d4d6}
+#cont_main .box_left .box_pics .tab_video{left: 283px; border-right: 1px solid #DFDFE1}
+#cont_main .box_left .box_pics ul{display: none; position: absolute; top: 40px; background: #fbfbfd; width: auto; height: 113px; overflow: hidden; clear: both; padding: 27px 12px; border: 1px solid #d4d4d6}
+#cont_main .box_left .box_pics ul.on{display: block}
+#cont_main .box_left .box_pics ul li{float: left; width: 168px; height: 113px; padding: 0 11px; overflow: hidden; }
+#cont_main .box_left .box_pics ul li a{position: relative; display: block}
+#cont_main .box_left .box_pics ul li a img{width: 168px; height: 113px;}
+#cont_main .box_left .box_pics ul li a:hover span{display: block; position: absolute; bottom: 0; text-align: center; background: rgba(0,0,0,.7); width: 100%; color: #efefef; letter-spacing: -1px; line-height: 2.5em}
+
+#cont_main .box_right{float: right; width: 270px}
+#cont_main .box_right section{position: relative;  background: #fbfbfd}
+
+/* sec_shopBanner */
+#cont_main .box_right .sec_shopBanner {position: relative; width: 268px; height: 226px; border: 1px solid #b7b9bf; margin-bottom: 27px}
+#cont_main .box_right .sec_shopBanner .sb_slider{position: relative; width: 268px; height: 226px;  overflow: hidden}
+#cont_main .box_right .sec_shopBanner .sb_slider li{position: absolute; top: 0; left: 0; display: none}
+#cont_main .box_right .sec_shopBanner .sb_slider li a{display: block; font-size: 13px}
+#cont_main .box_right .sec_shopBanner .sb_slider li a:first-child{border-bottom: 1px solid #b7b9bf; }
+#cont_main .box_right .sec_shopBanner .sb_slider li .sb_txt{margin: 12px 14px 0; width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+#cont_main .box_right .sec_shopBanner .sb_slider li.on{display: block}
+#cont_main .box_right .sb_num, #cont_main .box_right .sb_ctrlBtn{position: absolute; position: absolute; bottom: 14px; }
+#cont_main .box_right .sb_num{right: 51px; color: #848484; font-size: 11px;}
+#cont_main .box_right .sb_num span{color: #c45900}
+#cont_main .box_right .sb_ctrlBtn{right: 12px; width: 29px; height: 15px}
+#cont_main .box_right .sb_ctrlBtn li{width: 50%; height: 15px; float: left; background: url(../img/spr_btn_i_b_move.gif) no-repeat;}
+#cont_main .box_right .sb_ctrlBtn li:last-child{background-position: -16px 0 }
+#cont_main .box_right .sb_ctrlBtn li a{display: block;width: 100%; height: 100%}
+
+/* sec_quickBanner */
+#cont_main .box_right .sec_quickBanner{position: relative; width: 270px; margin-bottom: 20px}
+#cont_main .box_right .sec_quickBanner ul{border-right: 1px solid #cecccd; border-bottom:1px solid #cecccd }
+#cont_main .box_right .sec_quickBanner ul li:last-child{position: relative; width: 269px; height: 57px; background: url(../img/img_quick5.jpg) no-repeat;}
+#cont_main .box_right .sec_quickBanner ul li:last-child a{position: absolute; top: 14px; display: block; display: inline-block; width: 29px; height: 29px; background: url(../img/spr_btn_quick_sns.jpg)}
+#cont_main .box_right .sec_quickBanner ul li:last-child .ico_fb{right: 52px;}
+#cont_main .box_right .sec_quickBanner ul li:last-child .ico_twt{right: 14px; background-position: -38px 0}
+
+/* sec_pcRoom */
+#cont_main .box_right .sec_pcRoom{position: relative; width: 244px; height: 92px; border-top: 1px solid #D1D1D3; border-left: 1px solid #D1D1D3;  border-right: 1px solid #C7C8C8; border-bottom: 1px solid #C7C8C8; background: #e2e2e4; padding: 16px 0 0 24px; margin-bottom: 20px}
+#cont_main .box_right .sec_pcRoom .point{color: #e25d0d}
+#cont_main .box_right .sec_pcRoom strong{height: 16px;  background: url(../img/spr_img_pcbang.gif) no-repeat; display: block; padding-left: 40px; font-size: 14px; letter-spacing: -2px}
+#cont_main .box_right .sec_pcRoom .btn_pcPoint{display: block;  width: 218px; border: 1px solid #000; border-top: 1px solid #D1D1D3; border-left: 1px solid #D1D1D3;  border-right: 1px solid #C7C8C8; border-bottom: 1px solid #C7C8C8; margin: 13px -5px 10px 0; text-align: center; padding: 5px 0 6px 0; background: url(../img/spr_blt_1.gif) 80% -18px no-repeat; background-color: #fff; letter-spacing: -1px; text-indent: -6px}
+#cont_main .box_right .sec_pcRoom>ul li{display: inline-block; letter-spacing: -1px}
+#cont_main .box_right .sec_pcRoom>ul li a{color: #898989}
+#cont_main .box_right .sec_pcRoom>ul li:first-child {position: relative; margin-right: 9px}
+#cont_main .box_right .sec_pcRoom>ul li:last-child{margin-left: 4px}
+#cont_main .box_right .sec_pcRoom>ul li:first-child:after{display: block; position: absolute; top: 5px; right: -8px; height: 8px; border-right: 1px solid #6a6a6c; content: ''}
+#cont_main .box_right .sec_pcRoom>ul li:first-child a{color: #c66e11}
+#cont_main .box_right .box_pcSpecial{display: none; position: absolute; left: -1px; width: 218px; height: 258px; background: #fff; z-index: 5; border: 1px solid #a2a2a2; }
+#cont_main .box_right .box_pcSpecial h3{padding: 0 12px; font-size: 14px; font-weight: bold; background: url(../img/btn_pc-pop_close.gif) 100% top no-repeat; background-color: #f5f5f5; border-bottom: 1px solid #e7e7e7; letter-spacing: -1px; line-height: 2.45em; }
+#cont_main .box_right .box_pcSpecial h3 a{display: block; width: 100%; height: 100%}
+#cont_main .box_right .box_pcSpecial ul{padding: 8px 12px 12px 12px}
+#cont_main .box_right .box_pcSpecial ul li{position: relative; font-size: 12px; letter-spacing: -1px}
+#cont_main .box_right .box_pcSpecial ul li:not(:last-child){line-height: 1.6em;}
+#cont_main .box_right .box_pcSpecial ul li span{position: absolute; right: 0}
+
+/* sec_quickLink */
+#cont_main .box_right .sec_quickLink{}
+#cont_main .box_right .sec_quickLink ul{width: 270px; height: 76px; clear: both}
+#cont_main .box_right .sec_quickLink ul li{width: 56px; float: left}
+#cont_main .box_right .sec_quickLink ul li:nth-child(-n+2){margin-right: 15px}
+#cont_main .box_right .sec_quickLink ul li:nth-child(3){margin-right: 16px}
+#cont_main .box_right .sec_quickLink ul li a{display: block; width: 100%; text-align: center; padding-top: 66px; background: url(../img/spr_btn_quick.gif) no-repeat; color: #797979; letter-spacing: -1px}
+#cont_main .box_right .sec_quickLink ul li:nth-child(2) a{background-position: -71px 0}
+#cont_main .box_right .sec_quickLink ul li:nth-child(3) a{background-position: -143px 0}
+#cont_main .box_right .sec_quickLink ul li:nth-child(4) a{background-position: -214px 0}
+
+#cont_main .box_right .sec_quickLink ul li:nth-child(1):hover a{background-position: 0 -92px}
+#cont_main .box_right .sec_quickLink ul li:nth-child(2):hover a{background-position: -71px -92px}
+#cont_main .box_right .sec_quickLink ul li:nth-child(3):hover a{background-position: -143px -92px}
+#cont_main .box_right .sec_quickLink ul li:nth-child(4):hover a{background-position: -214px -92px}
+
+#wrap #container .side_banner{position: absolute; top: 640px; right: -130px;}
+#wrap #container .side_banner li{margin-top: 20px}
+
+/* Cabal Online Footer Area */
+#cabalFooter{position: relative; width: 100%; height: 154px; padding-top: 35px; background-color: #151515; letter-spacing: -1px; margin-top: 92px}
+#cabalFooter .inner_footer{position: relative; width: 1100px; height: 100%; margin: 0 auto}
+.cont_fooLeft .logo_footer, .cont_fooLeft ul li:nth-child(n+2), .cont_fooRight ul li, .cont_fooRight td{background: url(../img/spr_footer.png) no-repeat;}
+.inner_footer ul li{float: left}
+.cont_fooLeft{position: relative; top: 0; left: 0; float: left; width: 60%; height: 100%} 
+.cont_fooLeft .logo_footer{position: absolute; top: 0; left: 0; width: 118px; height: 24px}
+.cont_fooLeft ul{position: absolute; top: 0; left: 132px}
+.cont_fooLeft ul li{padding:0 8px}
+.cont_fooLeft ul li:nth-child(n+2) {background-position: 0 -94px}
+.cont_fooLeft ul li a{color: #b3b3b3}
+.cont_fooLeft address{position: absolute; top: 25px; left: 140px; line-height: 1.5em; color: #8a8a8a}
+.cont_fooLeft address span{display: block; letter-spacing: 0}
+.cont_fooRight{position: relative; top: 0; right: 0; width: 40%; height: 100%; float: right}
+.cont_fooRight table{position: absolute; right: 0; background-color: #9a0d30; color: #fff; text-align: left; font-size: 10px}
+.cont_fooRight tr:nth-of-type(-n+2){border-bottom: 1px solid #ad3d58}
+.cont_fooRight tr td:nth-of-type(1){border-right: 1px solid #ad3d58}
+.cont_fooRight th{font-weight: normal}
+.cont_fooRight td{background-position: 0 -108px}
+.cont_fooRight th, .cont_fooRight td{padding: 6px 12px;}
+.cont_fooRight ul{position: absolute; right: 0; bottom: 20px}
+.cont_fooRight ul li{display: block; width: 36px; height: 42px;}
+.cont_fooRight ul li:nth-child(1){background-position: 0 -40px ; margin-right: 8px;}
+.cont_fooRight ul li:nth-child(2){background-position: -44px -40px }

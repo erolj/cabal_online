@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CABAL Online - Copy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://image.cabal.co.kr/favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/getJsonData.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- THIS IS PORTFOLIO SITE !! (ESTGames CABAL ONLINE COPY SITE) -->
+    <div id="popUp">
+        <p>이 사이트는 이스트게임즈의 카발온라인의 카피사이트로 실제 사이트가 아닌 개인 포트폴리오 사이트입니다.</p>
+    </div>
+
+    <!--EstGames Global Navigation Bar-->
+    <div id="estGnb">
+        <div class="inner_gnb">
+            <h1><a href="javascript:void(0)"><span class="blind">ESTgames</span></a></h1>
+            <div class="menu_gnbL clearfix">
+                <a href="javascript:void(0)" class="bold">카발 온라인</a>
+                <a href="javascript:void(0)" class="toggle_1 off"><span class="blind">열기</span></a>
+                <ul class="list_game clearfix">
+                    <li><a href="javascript:void(0)"><img src="img/img_cabal.gif" alt="카발 온라인"> <span class="bold">카발 온라인</span></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/img_cabal2.gif" alt="카발2"> <span class="bold">카발2</span></a></li>
+                    <li><a href="javascript:void(0)">"신규 업데이트" 보러가기</a></li>
+                </ul>
+            </div>
+            <ul class="menu_gnbR clearfix">
+                <li>
+                    <a href="javascript:void(0)">고객센터</a>
+                    <a href="javascript:void(0)" class="toggle_2"><span class="blind">열기</span></a>
+                    <ul class="list_center">
+                        <li><a href="javascript:void(0)">계정도용신고</a></li>
+                        <li><a href="javascript:void(0)">보안센터</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="bold">회원가입</a></li>
+                <li><a href="javascript:void(0)"><span class="blind">로그인</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="skipNav">
+        <a href="#cont_main">본문컨텐츠 바로가기</a>
+    </div>
+
+    <!--CABAL Online-->
+    <div id="wrap">
+        <div id="container">
+            <header id="cabalHeader">
+                <h1><a href="javascript:void(0)"><span class="blind">CABAL Online</span></a></h1>
+                <nav id="cabalGnb">
+                    <h2 class="blind">글로벌네비게이션 영역</h2>
+                    <ul class="menu clearfix">
+                        <li class="on">
+                            <h3><a href="javascript:void(0)"><span class="blind">새소식</span></a></h3>
+                            <ul class="menu_sub ms1">
+                                <li><a href="javascript:void(0)">공지사항</a></li>
+                                <li><a href="javascript:void(0)">업데이트</a></li>
+                                <li><a href="javascript:void(0)">이벤트</a></li>
+                                <li><a href="javascript:void(0)">언론보도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="javascript:void(0)"><span class="blind">게임정보</span></a></h3>
+                            <ul class="menu_sub ms2">
+                                <li><a href="javascript:void(0)">카발스토리</a></li>
+                                <li><a href="javascript:void(0)">게임특징</a></li>
+                                <li><a href="javascript:void(0)">배틀스타일 소개</a></li>
+                                <li><a href="javascript:void(0)">포스북</a></li>
+                                <li><a href="javascript:void(0)">업데이트 리뷰</a></li>
+                                <li><a href="javascript:void(0)">복귀 가이드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="javascript:void(0)"><span class="blind">아이템샵</span></a></h3>
+                            <ul class="menu_sub ms3">
+                                <li><a href="javascript:void(0)">아이템 구매</a></li>
+                                <li><a href="javascript:void(0)">자동 충전</a></li>
+                                <li><a href="javascript:void(0)">원클릭 충전</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="javascript:void(0)"><span class="blind">네바레스존</span></a></h3>
+                            <ul class="menu_sub ms4">
+                                <li><a href="javascript:void(0)">길드</a></li>
+                                <li><a href="javascript:void(0)">캐릭터 검색</a></li>
+                                <li><a href="javascript:void(0)">내 캐릭터 정보</a></li>
+                                <li><a href="javascript:void(0)">WAR Status</a></li>
+                                <li><a href="javascript:void(0)">글로벌 랭킹</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="javascript:void(0)"><span class="blind">커뮤니티</span></a></h3>
+                            <ul class="menu_sub ms5">
+                                <li><a href="javascript:void(0)">자유게시판</a></li>
+                                <li><a href="javascript:void(0)">공략게시판</a></li>
+                                <li><a href="javascript:void(0)">친구 찾기</a></li>
+                                <li><a href="javascript:void(0)">ISSUE &amp; ISSUE</a></li>
+                                <li><a href="javascript:void(0)">갤러리</a></li>
+                                <li><a href="javascript:void(0)">동영상</a></li>
+                                <li><a href="javascript:void(0)">현모 이벤트 후기</a></li>
+                                <li><a href="javascript:void(0)">팬사이트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="javascript:void(0)"><span class="blind">자료실</span></a></h3>
+                            <ul class="menu_sub ms6">
+                                <li><a href="javascript:void(0)">다운로드</a></li>
+                                <li><a href="javascript:void(0)">월페이퍼</a></li>
+                                <li><a href="javascript:void(0)">카발 동영상</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><a href="javascript:void(0)"><span class="blind">고객센터</span></a></h3>
+                            <ul class="menu_sub ms7">
+                                <li><a href="javascript:void(0)">FAQ</a></li>
+                                <li><a href="javascript:void(0)">보안/신고센터</a></li>
+                                <li><a href="javascript:void(0)">마이페이지</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="cont_intro clearfix">
+                <div class="wrap_slider">
+                    <ul class="cont_slider">
+                        <li><img src="img/img_banner1.png" alt></li>
+                        <li><img src="img/img_banner2.png" alt></li>
+                        <li><img src="img/img_banner3.png" alt></li>
+                        <li><img src="img/img_banner4.png" alt></li>
+                        <li><img src="img/img_banner5.png" alt></li>
+                        <li><img src="img/img_banner6.png" alt></li>
+                        <li><img src="img/img_banner7.png" alt></li>
+                        <li><img src="img/img_banner8.png" alt></li>
+                    </ul>
+                    <ul class="btn_slider">
+                        <li class="on"><a href="javascript:void(0)"></a><a href=""></a><span class="blind">1</span></li>
+                        <li><a href="javascript:void(0)"><span class="blind">2</span></a></li>
+                        <li><a href="javascript:void(0)"><span class="blind">3</span></a></li>
+                        <li><a href="javascript:void(0)"><span class="blind">4</span></a></li>
+                        <li><a href="javascript:void(0)"><span class="blind">5</span></a></li>
+                        <li><a href="javascript:void(0)"><span class="blind">6</span></a></li>
+                        <li><a href="javascript:void(0)"><span class="blind">7</span></a></li>
+                        <li><a href="javascript:void(0)"><span class="blind">8</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="box_contR">
+                    <section class="sec_start">
+                        <h2 class="blind">게임시작</h2>
+
+                        <a href="javascript:void(0)" class="btn_start"><span class="blind">GAME START</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="btn_autoDownload">수동다운로드</a></li>
+                            <li><a href="javascript:void(0)">시스템 권장사양</a></li>
+                        </ul>
+                    </section>
+                    <section class="sec_account">
+                        <h2 class="blind">로그인 영역</h2>
+
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend class="blind">로그인</legend>
+                                <input type="checkbox" id="secureConn" class="blind" checked><label for="secureConn" class="label_secure">보안접속</label>
+                                <input type="checkbox" id="saveId" class="blind"><label for="saveId" class="label_saveId">아이디 저장</label>
+                                <div class="box_login">
+                                    <input type="text" id="insertId" class="input_login"><label for="insertId" class="label_id"><span class="blind">아이디</span></label>
+                                    <input type="password" id="insertPw" class="input_login"><label for="insertPw" class="label_pw"><span class="blind">비밀번호</span></label>
+                                    <input type="submit" class="btn_login" value="로그인">
+                                </div>
+                            </fieldset>
+                        </form>
+                        <ul class="menu_login">
+                            <li><a class="point" href="javascript:void(0)">회원가입</a></li>
+                            <li><a href="javascript:void(0)">아이디 찾기</a></li>
+                            <li><a href="javascript:void(0)">패스워드 찾기</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div class="cont_quickNotice clearfix">
+                <section class="sec_quickNotice">
+                    <h2 class="blind">주요공지</h2>
+
+                    <div class="wrap_notice_list">
+                        <ul class="notice_list">
+                            <li>
+                                <a href="javascript:void(0)"><strong>[아이템샵]</strong></a>
+                                <a href="javascript:void(0)" class="notice_tle">카발의 다양한 서비스를 ★포스젬★ 하나로~!!</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><strong>[아이템샵]</strong></a>
+                                <a href="javascript:void(0)" class="notice_tle">★코스튬 캡슐 봉인석★</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><strong>[아이템샵]</strong></a>
+                                <a href="javascript:void(0)" class="notice_tle">★코스튬 세이프티키트★</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><strong>[아이템샵]</strong></a>
+                                <a href="javascript:void(0)" class="notice_tle">카발의 다양한 서비스를 ★포스젬★ 하나로~!!</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><strong>[아이템샵]</strong></a>
+                                <a href="javascript:void(0)" class="notice_tle">코스튬 옵션 추출을 원한다면~!! ★코스튬 세이프티키트★</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec_srch clearfix">
+                    <h2 class="blind">검색</h2>
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                            <label for="inputSrchTxt" class="label_srch_txt">카발의 모든 정보 검색</label>
+                            <input type="text" id="inputSrchTxt" class="input_txt">
+                            <label for="inputSrchBtn" class="blind">검색</label>
+                            <input type="submit" id="inputSrchBtn" class="btn_srch" value="검색">
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+
+            <div id="cont_main" class="clearfix">
+                <section class="box_left">
+                    <h2 class="blind">본문 영역</h2>
+                    <section class="sec_itemShop">
+                        <h3>아이템샵</h3>
+
+                        <div class="wrap_item_slider">
+                            <div class="cont_item_slider">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="hot"><span class="blind">hot</span></span>
+                                    <img src="img/img_item_shop1.jpg" alt="">
+                                    <span>혼돈의 탈리스만</span>
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="hot"><span class="blind">new</span></span>
+                                    <img src="img/img_item_shop2.jpg" alt="">
+                                    <span>포스젬 패키지 X1,000</span>
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="new"><span class="blind">new</span></span>
+                                    <img src="img/img_item_shop3.gif" alt="">
+                                    <span>배틀스타일 체인지키트</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="new"><span class="blind">new</span></span>
+                                    <img src="img/img_item_shop4.gif" alt="">
+                                    <span>영웅의 성수</span>
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="new"><span class="blind">new</span></span>
+                                    <img src="img/img_item_shop5.gif" alt="">
+                                    <span>극한의 성수</span>
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="new"><span class="blind">new</span></span>
+                                    <img src="img/img_item_shop6.gif" alt="">
+                                    <span>보드 K-Violet</span>
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                    <span class="hot"><span class="blind">hot</span></span>
+                                    <img src="img/img_item_shop7.gif" alt="">
+                                    <span>코스튬 세이프티 키트</span>
+                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="btn_item_prev"><a href="#prev"><span class="blind">이전</span></a></li>
+                            <li class="btn_item_next"><a href="#next"><span class="blind">다음</span></a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="btn_more">더보기</a>
+                    </section>
+
+                    <div class="cont_middle clearfix">
+                        <section class="sec_issue cmn_md_size">
+                            <h3>ISSUE &amp; ISSUE</h3>
+
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="img/main_issue_story.jpg" alt>
+                                        <p>
+                                        <strong>기획자의 기획이야기 '2018 하반기 업데이트'</strong> 
+                                        <span>자세히 보기</span></p> 
+                                    </a>
+                                </li>
+                                <li class="list"><a href="javascript:void(0)">기획자의 기획이야기 '2017 상반기 업데이트' </a><span class="date">2017.03.27</span></li>
+                                <li class="list"><a href="javascript:void(0)">[EVENT] 삼일절, 태극기는 카발이 드려요~ </a><span class="date">2017.02.24</span></li>
+                            </ul>
+                            <a href="javascript:void(0)" class="btn_more">더보기</a>
+                        </section>
+                        <div class="box_info cmn_md_size">
+                            <h3 class="tab_notice on"><a href="javascript:void(0)">공지사항</a></h3>
+                            <ul id="tcNotice" class="tc_notice on">
+                                <!--get json-->
+                            </ul>
+                            <h3 class="tab_update"><a href="javascript:void(0)">업데이트</a></h3>
+                            <ul id="tcUpdate" class="tc_update">
+                                <!--get json-->
+                            </ul>
+                            <h3 class="tab_article"><a href="javascript:void(0)">언론보도</a></h3>
+                            <ul id="tcArticle" class="tc_article">
+                                <!--get json-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box_pics">
+                        <h3 class="tab_review on"><a href="javascript:void(0)">업데이트 리뷰</a></h3>
+                        <ul class="tc_review on">
+                            <li>
+                                <a href="javascript:void(0)"> <img src="img/20180719_demmonlite_sub.jpg" alt><span>2018.07.18 업데이트</span> </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"> <img src="img/1206_update_sub.jpg" alt><span>2017.12.06 업데이트</span></a>
+
+                            </li>
+                            <li> <a href="javascript:void(0)"> <img src="img/20170729_b3f_sub.jpg" alt><span>포가튼템플 B3F 업데이트</span> </a>
+
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/20161207_forcegunner.jpg" alt><span>PartV. FoceGunner</span>
+                                    </a>
+                            </li>
+                        </ul>
+                        <h3 class="tab_gallery"><a href="javascript:void(0)">갤러리</a></h3>
+                        <ul class="tc_gallery">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_gal1.jpg" alt><span>터널서 스샷..</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_gal2.jpg" alt><span>대한민국 승리기원 이벤트~</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_gal3.jpg" alt><span>한 컷 .........</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_gal4.jpg" alt><span>일좀</span>
+                                    </a>
+                            </li>
+                        </ul>
+                        <h3 class="tab_video"><a href="javascript:void(0)">동영상</a></h3>
+                        <ul class="tc_video">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_mv1.jpg" alt><span>캐릭터와 바이크의 속도 대결</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_mv1.jpg" alt><span>캐릭터VS바이크 속도 대결</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_mv3.jpg" alt><span>카발 노래에 맞춰 춤추기!!!</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="img/img_mv4.jpg" alt><span>이것이 내가 하는 CABAL!</span>
+                                    </a>
+                            </li>
+                        </ul>
+                        <a href="javascript:void(0)" class="btn_more">더보기</a>
+                    </div>
+                </section>
+                
+                <div class="box_right">
+                    <section class="sec_shopBanner">
+                        <h2 class="blind">아이템샵 배너</h2>
+                        <ul class="sb_slider">
+                            <li class="on">
+                                <a href="javascript:void(0)"><img src="img/img_right_banner1.jpg" alt></a>
+                                <a href="javascript:void(0)" class="sb_txt">명예 훈장 보관함</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="img/img_right_banner2.jpg" alt></a>
+                                <a href="javascript:void(0)" class="sb_txt">WExp세이버 - 5,000WExp 저장</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="img/img_right_banner3.jpg" alt></a>
+                                <a href="javascript:void(0)" class="sb_txt">블레싱 비드 - 펫 경험지 증가 1000%</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="img/img_right_banner4.jpg" alt></a>
+                                <a href="javascript:void(0)" class="sb_txt">미네스타의 아메시스트참</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="img/img_right_banner5.jpg" alt></a>
+                                <a href="javascript:void(0)" class="sb_txt">극한/영웅의 성수</a>
+                            </li>
+                        </ul>
+                        <p class="sb_num"><span>1</span>/5</p>
+                        <ul class="sb_ctrlBtn clearfix">
+                            <li><a href="javascript:void(0)"><span class="blind">이전</span></a></li>
+                            <li><a href="javascript:void(0)"><span class="blind">다음</span></a></li>
+                        </ul>
+                    </section>
+                    <section class="sec_quickBanner">
+                        <h2 class="blind">퀵 배너</h2>
+                        <ul>
+                            <li><a href="javascript:void(0)"><span class="blind">편리한 자동 충전</span><img src="img/img_quick1.jpg" alt></a></li>
+                            <li><a href="javascript:void(0)"><span class="blind">간편한 원클릭 충전</span><img src="img/img_quick2.jpg" alt></a></li>
+                            <li><a href="javascript:void(0)"><span class="blind">초보자 플레이 가이드</span><img src="img/img_quick3.jpg" alt></a></li>
+                            <li><a href="javascript:void(0)"><span class="blind">명의도용 방지 서비스</span><img src="img/img_quick4.jpg" alt></a></li>
+                            <li><span class="blind">카발 공식 온라인 SNS</span>
+                                <a href="javascript:void(0)" class="ico_fb"><span class="blind">페이스북</span></a>
+                                <a href="javascript:void(0)" class="ico_twt"><span class="blind">트위터</span></a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="sec_pcRoom">
+                        <h2 class="blind">PC방 혜택</h2>
+                        <strong>EST PC방 <span class="point">전용혜택</span>을 받으세요!</strong>
+                        <a href="javascript:void(0)" class="btn_pcPoint">나의 <span class="point">PC포인트</span> 확인하기</a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="btn_pc_toggle">PC방 전용 혜택</a></li>
+                            <li><a href="javascript:void(0)">PC방 쿠폰 등록</a></li>
+                        </ul>
+                        <div class="box_pcSpecial">
+                            <h3><a href="javascript:void(0)" class="point btn_close">PC방 전용 혜택</a></h3>
+                            <ul>
+                                <li>경험치 증가 <span class="point">25%</span></li>
+                                <li>스킬 경험치 증가 <span class="point">25%</span></li>
+                                <li>펫 경험치 증가 <span class="point">25%</span></li>
+                                <li>아이템 드롭률 증가 <span class="point">25%</span></li>
+                                <li>WExp 획득 증가 <span class="point">25%</span></li>
+                                <li>Axp 획득량 증가 <span class="point">25%</span></li>
+                                <li>폭탄 ALZ 드롭률 증가 <span class="point">200%</span></li>
+                                <li>GPS 워프 가능</li>
+                                <li>프리미엄 채널 입장 가능</li>
+                                <li>PC방 포인트 지급 10분/1포인트</li>
+                                <li>스페셜 인벤토리 선물 지급</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="sec_quickLink">
+                        <h2 class="blind">바로가기 메뉴</h2>
+                        <ul>
+                            <li><a href="javascript:void(0)">EST PC방</a></li>
+                            <li><a href="javascript:void(0)">모바일</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a href="javascript:void(0)">1  :  1 문의</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="side_banner">
+                <ul>
+                    <li><a href="javascript:void(0)"><img src="img/btn_side_banner-1.png" alt="데모나이트 업데이트 보기"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/btn_side_banner-2.png" alt="복귀 풀장비 수령"></a></li>
+                    <li><a href="javascript:void(0)"><img src="img/btn_side_banner-3.png" alt="자동 충전"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer id="cabalFooter">
+            <div class="inner_footer clearfix">
+                <div class="cont_fooLeft">
+                    <h2 class="blind">사이트이용정보</h2>
+                    <span class="logo_footer"><span class="blind">ESTGames</span></span>
+                    <ul class="clearfix">
+                        <li><a href="javascript:void(0)">운영정책</a></li>
+                        <li><a href="javascript:void(0)">이용약관</a></li>
+                        <li><a href="javascript:void(0)" class="bold">개인정보처리방침</a></li>
+                        <li><a href="javascript:void(0)">청소년 보호정책</a></li>
+                        <li><a href="javascript:void(0)">아이템샵 이용약관</a></li>
+                    </ul>
+                    <address>
+                        ㈜이스트게임즈 대표이사 이형백 서울시 서초구 반포대로 3 이스트빌딩 <br>
+                        사업자등록번호 214-88-80538 통신판매업 신고번호 2015-서울서초-00698호 <br>
+                        개인정보 및 청소년 보호 책임자 오석원 <br>
+                        <span>Tel: 02-586-5522 Fax: 02-586-0990 Mail: cabal@cabal.co.kr </span>
+                        <span>Copyright ⓒ ESTgames Corp. All Rights Reserved.</span>
+                    </address>
+                </div>
+
+                <div class="cont_fooRight">
+                    <h2 class="blind">게임정보</h2>
+                    <table>
+                        <caption class="blind">게임이용정보</caption>
+                        <tbody>
+                            <tr>
+                                <th>제명</th>
+                                <td>카발온라인 : 트랜센던스</td>
+                                <th>상호</th>
+                                <td>(주)이스트소프트</td>
+                            </tr>
+                            <tr>
+                                <th>이용등급</th>
+                                <td>청소년 이용불가</td>
+                                <th>등급분류정보</th>
+                                <td>제 CC-NP-141127-002호</td>
+                            </tr>
+                            <tr>
+                                <th>등급 분류일자</th>
+                                <td>2014. 11. 27</td>
+                                <th>신고번호</th>
+                                <td>제 2007 - 3호</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="clearfix">
+                        <li><span class="blind">청소년이용불가</span></li>
+                        <li><span class="blind">폭력성</span></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
