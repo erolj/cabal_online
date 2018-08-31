@@ -2,7 +2,7 @@
 .blind{display: block; position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; opacity: 0; z-index: -1}
 .bold{font-weight: bold}
 .clearfix:after{clear: both; display: block; content: ''}
-.btn_more{position: absolute; right: 15px; top: 10px; background: url(http://localhost/cabal_online/css/../img/spr_blt.gif) 100% -26px no-repeat; padding-right: 8px;}
+.btn_more{position: absolute; right: 15px; top: 10px; background: url(../img/spr_blt.gif) 100% -26px no-repeat; padding-right: 8px;}
 
 #popUp{ width: 100%; text-align: center; background: #fa4d4d; color: #fefefe; font-size: 14px; line-height: 3em; font-size: 18px; letter-spacing: -1px;
 }
