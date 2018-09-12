@@ -154,28 +154,52 @@ $(document).ready(function () {
         $(this).next('ul').addClass('on');
     });
 
+    /*  Shop Banner Slider 
+     $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
+         e.preventDefault();
+         if (sbCnt == 0) sbCnt = 0;
+         else {
+             sbCnt--;
+             $('.sb_num span').text(sbCnt + 1);
+             $('.sb_slider li').removeClass('on');
+             $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
+
+
+         }
+     });
+     $('.sb_ctrlBtn li:eq(1) a').click(function (e) {
+         e.preventDefault();
+         if (sbCnt == 4) sbCnt = 4;
+         else {
+             sbCnt++;
+             $('.sb_num span').text(sbCnt + 1);
+             $('.sb_slider li').removeClass('on');
+             $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
+         }
+     });*/
+
     /* Shop Banner Slider */
-    $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
-        e.preventDefault();
-        if (sbCnt == 0) sbCnt = 0;
-        else {
-            sbCnt--;
-            $('.sb_num span').text(sbCnt + 1);
-            $('.sb_slider li').removeClass('on');
-            $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
-
-
-        }
-    });
-    $('.sb_ctrlBtn li:eq(1) a').click(function (e) {
-        e.preventDefault();
-        if (sbCnt == 4) sbCnt = 4;
+    function shopSlider() {
+        if (sbCnt <= 0) sbCnt = 0;
+        if (sbCnt >= 5) sbCnt = 0;
         else {
             sbCnt++;
             $('.sb_num span').text(sbCnt + 1);
             $('.sb_slider li').removeClass('on');
             $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
         }
+    }
+    var shopAuto = setInterval(shopSlider, 3000);
+
+    $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
+        e.preventDefault();
+        clearInterval(shopAuto);
+        shopAuto = setInterval(shopSlider, 3000);
+    });
+    $('.sb_ctrlBtn li:eq(1) a').click(function (e) {
+        e.preventDefault();
+        clearInterval(shopAuto);
+        shopAuto = setInterval(shopSlider, 3000);
     });
 
     /* PC Room Toggle */
