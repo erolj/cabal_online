@@ -86,13 +86,14 @@ overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:
 #cabalGnb .menu .ms3:before{left: 120px}
 #cabalGnb .menu .ms4:before{left: 120px}
 #cabalGnb .menu .ms5:before{left: 385px}
-#cabalGnb .menu .ms6:before{left: unset; right: 155px}
-#cabalGnb .menu .ms7:before{left: unset; right: 35px}
+#cabalGnb .menu .ms6:before{left: 70px}
+#cabalGnb .menu .ms7:before{left: 190px}
 #cabalGnb .menu .menu_sub{position: absolute; left: 0; bottom: -20px; display: none; background: rgba(0,0,0,.4); letter-spacing: -1px}
 #cabalGnb .menu .menu_sub{display: none; font-size: 14px; line-height: 2em}
 #cabalGnb .menu .ms3{left: 160px}
 #cabalGnb .menu .ms4{left: 300px}
-#cabalGnb .menu .ms5, #cabalGnb .menu .ms6, #cabalGnb .menu .ms7{left: unset; right: 0}
+#cabalGnb .menu .ms5{left:170px}
+#cabalGnb .menu .ms6, #cabalGnb .menu .ms7{left: 600px}
 #cabalGnb .menu>li:hover .menu_sub{display: block}
 #cabalGnb .menu .menu_sub li a{padding: 0 11px; color: #c0c0c0}
 #cabalGnb .menu .menu_sub li:hover a{color: #ff8004}
