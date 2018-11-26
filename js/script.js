@@ -14,7 +14,6 @@ $(document).ready(function () {
     var sbAllCnt = $('.sb_slider li').index();
     var sbCnt = 0;
 
-    var toggle = true;
 
     $('.cont_slider li').eq(0).show().siblings().hide();
 
@@ -154,7 +153,7 @@ $(document).ready(function () {
         $(this).next('ul').addClass('on');
     });
 
-    /*  Shop Banner Slider 
+    /*  Shop Banner Slider */
      $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
          e.preventDefault();
          if (sbCnt == 0) sbCnt = 0;
@@ -176,31 +175,7 @@ $(document).ready(function () {
              $('.sb_slider li').removeClass('on');
              $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
          }
-     });*/
-
-    /* Shop Banner Slider */
-    function shopSlider() {
-        if (sbCnt <= 0) sbCnt = 0;
-        if (sbCnt >= 5) sbCnt = 0;
-        else {
-            sbCnt++;
-            $('.sb_num span').text(sbCnt + 1);
-            $('.sb_slider li').removeClass('on');
-            $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
-        }
-    }
-    var shopAuto = setInterval(shopSlider, 3000);
-
-    $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
-        e.preventDefault();
-        clearInterval(shopAuto);
-        shopAuto = setInterval(shopSlider, 3000);
-    });
-    $('.sb_ctrlBtn li:eq(1) a').click(function (e) {
-        e.preventDefault();
-        clearInterval(shopAuto);
-        shopAuto = setInterval(shopSlider, 3000);
-    });
+     });
 
     /* PC Room Toggle */
     $('.btn_pc_toggle').click(function (e) {
@@ -209,15 +184,12 @@ $(document).ready(function () {
         $('.btn_close').click(function (e) {
             e.preventDefault();
             $('.box_pcSpecial').hide();
-            toggle = true;
         });
 
-        if (toggle == true) {
-            $('.box_pcSpecial').show();
-            toggle = false;
-        } else if (toggle == false) {
+        if ($('.box_pcSpecial').css('display') == "block") {
             $('.box_pcSpecial').hide();
-            toggle = true;
+        } else {
+            $('.box_pcSpecial').show();
         }
     });
 });
