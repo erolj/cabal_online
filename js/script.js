@@ -38,6 +38,19 @@ $(document).ready(function () {
         $('.list_center').hide();
     });
 
+    /*Cabal Global Navigation_Tab Focus*/
+    $('#cabalGnb h3 a').on('focus', function () {
+        var subDepth = $(this).parents('li').find('ul');
+        
+        $(this).keydown(function () {
+            if (window.event.keyCode == 13 && subDepth.css("display") == 'none') {
+                $('#cabalGnb>ul ul').hide();
+                subDepth.show();
+            } else if ( window.event.keyCode == 13 && subDepth.css("display") == 'block') {
+                $('#cabalGnb>ul ul').hide();
+            }
+        });
+    });
 
     /* Fade Slider */
     function fade() {
@@ -154,28 +167,28 @@ $(document).ready(function () {
     });
 
     /*  Shop Banner Slider */
-     $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
-         e.preventDefault();
-         if (sbCnt == 0) sbCnt = 0;
-         else {
-             sbCnt--;
-             $('.sb_num span').text(sbCnt + 1);
-             $('.sb_slider li').removeClass('on');
-             $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
+    $('.sb_ctrlBtn li:eq(0) a').click(function (e) {
+        e.preventDefault();
+        if (sbCnt == 0) sbCnt = 0;
+        else {
+            sbCnt--;
+            $('.sb_num span').text(sbCnt + 1);
+            $('.sb_slider li').removeClass('on');
+            $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
 
 
-         }
-     });
-     $('.sb_ctrlBtn li:eq(1) a').click(function (e) {
-         e.preventDefault();
-         if (sbCnt == 4) sbCnt = 4;
-         else {
-             sbCnt++;
-             $('.sb_num span').text(sbCnt + 1);
-             $('.sb_slider li').removeClass('on');
-             $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
-         }
-     });
+        }
+    });
+    $('.sb_ctrlBtn li:eq(1) a').click(function (e) {
+        e.preventDefault();
+        if (sbCnt == 4) sbCnt = 4;
+        else {
+            sbCnt++;
+            $('.sb_num span').text(sbCnt + 1);
+            $('.sb_slider li').removeClass('on');
+            $('.sb_slider li:eq(' + sbCnt + ')').addClass('on');
+        }
+    });
 
     /* PC Room Toggle */
     $('.btn_pc_toggle').click(function (e) {
@@ -192,4 +205,5 @@ $(document).ready(function () {
             $('.box_pcSpecial').show();
         }
     });
+
 });
